@@ -49,7 +49,7 @@ MainFrame::MainFrame(std::shared_ptr<mysqlx::Session> temp_session) : wxFrame(nu
 	rb_structure->Hide();
 	rb_data->Hide();
 
-	add_column_to_data_listbox_btn = new wxButton(panel, wxID_ANY, "Add row", wxPoint(310, 40), wxSize(125, -1));
+	add_column_to_data_listbox_btn = new wxButton(panel, wxID_ANY, "Add row", wxPoint(310, 60), wxSize(125, -1));
 	add_column_to_data_listbox_btn->Hide();
 
 	m_active_structure_data_listbox = results_structure_listbox;

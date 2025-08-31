@@ -31,7 +31,7 @@ InitFrame::InitFrame() : wxFrame(nullptr, wxID_ANY, "Connect to MySQL") {
                      wxPoint(90, 175), wxDefaultSize, wxTE_PASSWORD);
 
   wxButton *connect_button =
-      new wxButton(panel, wxID_ANY, "Connect", wxPoint(105, 210), wxDefaultSize,
+      new wxButton(panel, wxID_ANY, "Connect", wxPoint(105, 220), wxDefaultSize,
                    wxWANTS_CHARS);
 
   connect_button->Bind(wxEVT_CHAR_HOOK, &InitFrame::OnKeyEvent, this);
@@ -56,7 +56,7 @@ void InitFrame::ConnectToMysql() {
 
       if (_temp) {
         MainFrame *frame = new MainFrame(std::move(_temp));
-        frame->SetSize(800, 600);
+        frame->SetSize(850, 650);
         frame->Center();
         frame->Show();
         this->Destroy();
