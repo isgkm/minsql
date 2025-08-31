@@ -44,7 +44,7 @@ MainFrame::MainFrame(std::shared_ptr<mysqlx::Session> temp_session) : wxFrame(nu
 	results_data_listbox->Hide();
 
 	rb_structure = new wxRadioButton(panel, wxID_ANY, "Structure", wxPoint(310, 20));
-	rb_data = new wxRadioButton(panel, wxID_ANY, "Data", wxPoint(390, 20));
+	rb_data = new wxRadioButton(panel, wxID_ANY, "Data", wxPoint(410, 20));
 	rb_structure->SetValue(true);
 	rb_structure->Hide();
 	rb_data->Hide();
